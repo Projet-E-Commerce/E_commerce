@@ -105,9 +105,18 @@ input[type=search]:focus{
     padding-left: 0;
   }
 }
-img{
+#lol{
   position: fixed
 }
 #myBtn{
   background-color: grey;
 }
+/*css contenu audrey*/
+.imgcoque{
+  display: flex;
+  margin: auto;
+}
+.card-text{
+  text-align: center;
+}
+/*fin css contenu audrey*/
