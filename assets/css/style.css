@@ -10,6 +10,7 @@ nav{
   z-index:100;
   margin: auto;
 }
+/* Navbar style */
 .navbar{
   padding: 0;
   margin: 0;
@@ -18,7 +19,27 @@ nav{
   padding-top: 5px;
 }
 .nav-link{
-  color: white;
+  color: white;}
+
+  .navbar-header{
+    padding: 0;
+    height: 50px;
+  }
+  .nav-link{
+    padding: 30px 0;
+    color:black;
+    font-size: 25px;
+  }
+  .navbar-nav{
+    padding-left: 5em;
+    font-size: 1.1em;
+    font-weight: 200;
+  }
+  .nav-link:hover{
+    background-color: #b30000;
+    color: black;
+    font-size: 20px;
+  }
 }
 .nav-link:hover{
   background-color: #e60000;
@@ -202,6 +223,8 @@ footer{
   .secondNav{
     display: block;
   }
+  /*Caroussel
+  */
   #tuile1{
     height: 640px;
     width: 1300px
@@ -214,23 +237,6 @@ footer{
   }
   #ryan{
     padding-top: 138px;
-  }
-  .navbar-header{
-    padding: 0;
-    height: 50px;
-  }
-  .nav-link{
-    padding: 30px 0;
-    color:black;
-  }
-  .navbar-nav{
-    padding-left: 10em;
-    font-size: 1.1em;
-    font-weight: 200;
-  }
-  .nav-link:hover{
-    background-color: #b30000;
-    color: black;
   }
   .blocLienFooter{
     padding-left: 30%;
