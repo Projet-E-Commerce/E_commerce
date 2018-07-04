@@ -41,11 +41,6 @@ nav{
     color: black;
     font-size: 20px;
   }
-}
-.nav-link:hover{
-  background-color: #e60000;
-  color: white;
-}
 .dropdown-menu{
   background-color: #800000;
   border-right: 1px solid black;
@@ -62,20 +57,13 @@ nav{
    color: white;
    background-color: #072F54;
  }
- #ember926{
-   background-color: white;
- }
- i{
-   color: white;
-   font-size: 20px;
- }
+
  .ec1{
    max-width: 1600px;
    width: 100%;
-   position:fixed;
    top:0;
    z-index:1000;
-   background-color:White;
+   background-color:grey;
    margin: 0;
  }
 .btn{
@@ -83,7 +71,7 @@ nav{
 }
 .icon{
   background-color: #333333;
-  padding: 6px 6px 6px 0;
+  padding: 5px 5px 5px 0;
 }
 .form-control, .icon{
   border: none;
@@ -96,173 +84,9 @@ input[type=search]{
 input[type=search]:focus{
   background-color: #333333;
 }
-.card{
-  height:315px;
-  margin-top: 10px;
-  background: none;
-  padding-bottom: 10px;
-}
 
-.card h4{
-  background-color: rgba(129, 155, 200, 0.9);
-}
-.card h4:hover{
-  background-color: #819bc8;
-}
-.card p:hover{
- color: black;
-  background-color: rgba(255, 255, 255, 0.9);
+@media all and (max-width: 1322px){
 
-}
-.card-img-overlay{
-  padding: 15px;
-}
-#text-blue{
-  position:relative;
-  background-color: rgba(400, 30, 30, 0.9 );
-  top:13.8em;
-  display: inline;
-  padding: 0.4em;
-  color: white;
-}
-#text-blue:hover{
-  background-color: #b30000;
-}
-.card-text{
-  color: white;
-  opacity: 0.9;
-  position:relative;
-  background-color: black;
-  height: 50px;
-  top: 14.2em;
-  padding: 0.2em 0 0 0.4em;
-}
-
-#events{
-  background-color: #39719E;
-  color: white;
-  padding-top: 10px;
-  font-weight: normal;
-}
-.infos, .left, .right{
-  color:white;
-  font-size: 0.8em;
-  font-weight: normal;
-}
-hr{
-  background-color:white;
-}
-.card a{
-  color: black;
-}
-#tuile1, #tuile2, #tuile4, #tuile5, #tuile6, #tuile7, #tuile8, #tuile9, #tuile10{
-  height:215px;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#tuile1{
-  background-image: url(http://stage.thomastraum.com/wp-content/uploads/2012/10/KenzoLogo.jpg);
-}
-#tuile2{
-  background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/peggy_whitson_0.jpg);
-}
-#tuile4{
-  background-image: url(../image/Nasa2.jpg);
-}
-#tuile5{
-  background-image: url(../image/img1.jpg);
-}
-#tuile6{
-  background-image:url(../image/img2.jpg);
-}
-#tuile7{
-  background-image: url(../image/18-051c.jpg);
-}
-#tuile8{
-  background-image: url(../image/p7090097.jpg);
-}
-#tuile9{
-  background-image: url(../image/pia19808.jpg);
-}
-#tuile10{
-  background-image: url(../image/lunar_feature_header_pic.jpg);
-}
-.bouton{
-  color: white;
-  font-weight: bold;
-  width: 100%;
-  height: 40px;
-  background-color: #15418C;
-  margin: 30px 0;
-  text-align: center;
-  padding: 5px;
-}
-.bouton:hover{
-  background-color: #5D7FB9;
-  text-decoration: none;
-  color: white;
-}
-.test{
-  padding-right: 16px;
-}
-footer{
-  color: white;
-  font-size: small;
-  /* padding:0 0 0 20px; */
-  padding-bottom: 50px;
-}
-
-#logo{
-  height:70px;
-  padding-left: 15px;
-}
-.test3{
-  padding: 0 10px;
-}
-@media all and (min-width: 1022px){
-  .secondNav{
-    display: block;
-  }
-  /*Caroussel
-  */
-  #tuile1{
-    height: 640px;
-    width: 1300px
-  }
-  #tuile1 #text-blue{
-    top: 34.4em;
-  }
-  #tuile1 .card-text{
-    top: 34.6em;
-  }
-  #ryan{
-    padding-top: 138px;
-  }
-  .blocLienFooter{
-    padding-left: 30%;
-  }
-  .lienFooter{
-    padding-right: 20px;
-    display: inline-block;
-  }
-}
-@media all and (max-width: 1022px){
-  .secondNav{
-    display: none;
-  }
-  #tuile1{
-    height: 315px;
-  }
-  #tuile1 #text-blue{
-    top: 13.8em;
-  }
-  #tuile1 .card-text{
-    top: 14.2em;
-  }
-  #ryan{
-    padding-top: 110px;
-  }
   .navbar-header{
     padding: 0;
     height: 100px;
@@ -270,13 +94,8 @@ footer{
   .nav-link{
     padding: 5px;
   }
-  .navbar-nav{
-    padding-left: 0;
-    font-size: 1em;
-    font-weight: 400;
-  }
   .nav-link:hover{
-    background-color: #5D7FB9;
+    background-color: #b30000;
   }
   .nav-link{
     background-color: #15418C;
@@ -285,15 +104,10 @@ footer{
   .blocLienFooter{
     padding-left: 0;
   }
-  .lienFooter{
-    padding-right: 0;
-    display: block;
-  }
-}
-.btn{
-  background-color: black;
-  border-style:   ;
 }
 img{
   position: fixed
+}
+#myBtn{
+  background-color: grey;
 }
