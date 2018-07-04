@@ -53,7 +53,7 @@ nav{
    position:fixed;
    top:0;
    z-index:1000;
-   background-image:url(../image/Star.jpg);
+   background-color:grey;
    margin: 0;
  }
 .btn{
@@ -286,4 +286,7 @@ footer{
 .btn{
   background-color: black;
   border-style:   ;
+}
+img{
+  position: fixed
 }
