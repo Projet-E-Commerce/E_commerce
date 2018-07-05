@@ -3,3 +3,66 @@ $(document).ready(function(){
       $("#myModal").modal();
   });
 });
+
+
+//debut js audrey
+$('#linkAccueil').click(function(){
+  $('.coqueSamsung').show();
+  $('.coqueSony').show();
+  $('.coqueIphone').show();
+  $('.film').show();
+  $('.chargeurCable').show();
+});
+$('#linkPromo').click(function(){
+alert('Pas de promo actuellement')
+});
+$('#linkCoque').click(function(){
+  $('.coqueSamsung').show();
+  $('.coqueSony').show();
+  $('.coqueIphone').show();
+  $('.film').hide();
+  $('.chargeurCable').hide();
+});
+$('#linkSamsung').click(function(){
+  $('.coqueSamsung').show();
+  $('.coqueSony').hide();
+  $('.coqueIphone').hide();
+  $('.film').hide();
+  $('.chargeurCable').hide();
+});
+$('#linkIphone').click(function(){
+  $('.coqueSamsung').hide();
+  $('.coqueSony').hide();
+  $('.coqueIphone').show();
+  $('.film').hide();
+  $('.chargeurCable').hide();
+});
+$('#linkSony').click(function(){
+  $('.coqueSamsung').hide();
+  $('.coqueSony').show();
+  $('.coqueIphone').hide();
+  $('.film').hide();
+  $('.chargeurCable').hide();
+});
+$('#linkAccessoire').click(function(){
+  $('.coqueSamsung').hide();
+  $('.coqueSony').hide();
+  $('.coqueIphone').hide();
+  $('.film').show();
+  $('.chargeurCable').show();
+});
+$('#linkFilm').click(function(){
+  $('.coqueSamsung').hide();
+  $('.coqueSony').hide();
+  $('.coqueIphone').hide();
+  $('.film').show();
+  $('.chargeurCable').hide();
+});
+$('#linkChargeurCable').click(function(){
+  $('.coqueSamsung').hide();
+  $('.coqueSony').hide();
+  $('.coqueIphone').hide();
+  $('.film').hide();
+  $('.chargeurCable').show();
+});
+//fin js audrey

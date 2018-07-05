@@ -12,6 +12,7 @@ nav{
 }
 /* Navbar style */
 .navbar{
+
   padding: 0;
   margin: 0;
 }
@@ -59,7 +60,6 @@ nav{
  .ec1{
    width: 100%;
    top:0;
-   position: fixed;
    z-index:1000;
    background-image:url(../img/739916-awesome-background-images.jpg) ;
    margin: 0;
@@ -101,17 +101,21 @@ input[type=search]:focus{
   }
 }
 .nv2{
-  position: fixed
+  position: absolute;
 }
 .form-inline{
   margin-left: 670px;
 }
+#myBtn{position:absolute;
+        right:0;
+  color:black;
+  background-color: inherit;
+}
 /*css contenu audrey*/
-#audrey{
-  padding-top: 110px;
+.card-text{
+  text-align: center;
 }
 .imgcoque{
-  padding-top: 10px;
   display: flex;
   margin: auto;
 }
