@@ -120,3 +120,9 @@ input[type=search]:focus{
   margin: auto;
 }
 /*fin css contenu audrey*/
+/*footer style*/
+h6 {
+font-size : 20px;
+font-weight: bold;
+}
+/*fin footer style*/
