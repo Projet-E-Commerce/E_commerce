@@ -4,9 +4,7 @@ body{
   font-weight: bold;
 }
 .container-fluid{
-  width: 2000;
-
-
+  width: 100%
 }
 nav{
   z-index:100;
@@ -96,9 +94,6 @@ input[type=search]:focus{
   }
   .nav-link:hover{
     background-color: #b30000;
-  }
-  .nav-link{
-    background-color: #15418C;
 
   }
   .blocLienFooter{
