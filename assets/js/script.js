@@ -3,8 +3,6 @@ $(document).ready(function(){
       $("#myModal").modal();
   });
 });
-
-
 //debut js audrey
 $('#linkAccueil').click(function(){
   $('.coqueSamsung').show();
@@ -66,3 +64,13 @@ $('#linkChargeurCable').click(function(){
   $('.chargeurCable').show();
 });
 //fin js audrey
+//js panier
+$('.add-to-cart').click(function(){
+  var id = $(this).attr('data-id');
+  var name = $(this).attr('data-name');
+  var price = $(this).attr('data-price');
+  var selectq = '<select id="qt"><option value="1">'+ 1 +'</option><option value="2">'+ 2 +'</option><option value="3">'+ 3 +'</option><option value="4">'+ 4 +'</option></select>'
+  var qt= parseInt($('#qt').val());
+  console.log(id)
+  $('.afficherPanier').append('<tr><td>' + id +'</td><td>' + name +'</td><td>'+ price +'€</td><td>'+ selectq +'</td></tr>');
+});

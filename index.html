@@ -69,26 +69,40 @@
     </div>
       </nav>
               <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
 
-          <h4 class="modal-title">Pannier</h4>
+          <h4 class="modal-title">Bienvenue dans votre pannier.</h4>
         </div>
         <div class="modal-body">
-          <p>Bienvenu dans votre pannier.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="dropdown">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th >Référence : </th>
+                  <th >Article : </th>
+                  <th >Prix : </th>
+                  <th>Quantité : </th>
+                </tr>
+              </thead>
+              <tbody class="afficherPanier">
+              </tbody>
+            </table>
+            <p>Total : <span id="subTotal"></span> euros</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-            </div>
-      </div>
     </div>
-  </div>
+    </div>
+    </div>
+    </div>
+
 <!-- Fin partie Ryan -->
 <!--html contenu audrey-->
 <div class="container pt-3">
@@ -98,7 +112,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE SONY</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-qt="1" data-id="csony1" data-name="COQUE RIGIDE SONY" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -106,7 +120,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE SONY</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="csony2" data-name="COQUE RIGIDE SONY" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -116,7 +130,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE EN SILICONE IPHONE</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ciphone1" data-name="COQUE EN SILICONE IPHONE" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -124,7 +138,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE EN SILICONE IPHONE</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ciphone2" data-name="COQUE EN SILICONE IPHONE" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -134,7 +148,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE SONY</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="csony3" data-name="COQUE RIGIDE SONY" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -142,7 +156,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE SONY</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="csony4" data-name="COQUE RIGIDE SONY" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -152,7 +166,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE IPHONE</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ciphone3" data-name="COQUE RIGIDE IPHONE" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -160,7 +174,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE IPHONE</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ciphone4" data-name="COQUE RIGIDE IPHONE" data-price="12.99"  class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -170,7 +184,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE EN SILICONE IPHONE</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ciphone5" data-name="COQUE EN SILICONE IPHONE" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -178,7 +192,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE EN SILICONE IPHONE</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ciphone6" data-name="COQUE EN SILICONE IPHONE" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -188,7 +202,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE SAMSUNG</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="csamsung1" data-name="COQUE RIGIDE SAMSUNG" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -196,7 +210,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE SAMSUNG</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="csamsung2" data-name="COQUE RIGIDE SAMSUNG" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -206,7 +220,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE SAMSUNG</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="csamsung3" data-name="COQUE RIGIDE SAMSUNG" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -214,7 +228,7 @@
       <div class="card-body">
         <h2 class="card-text">12.99€</h2>
         <p class="card-text">COQUE RIGIDE SAMSUNG</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="csamsung4" data-name="COQUE RIGIDE SAMSUNG" data-price="12.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -222,9 +236,9 @@
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
       <img class="imgcoque" src="assets/img/film2.jpg" height="300" />
       <div class="card-body">
-        <h2 class="card-text">12.99€</h2>
-        <p class="card-text">COQUE RIGIDE SAMSUNG</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <h2 class="card-text">9.99€</h2>
+        <p class="card-text">FILM PROTECTEUR EN VERRE SAMSUNG</p>
+        <button type="button" data-id="fsamsung1" data-name="FILM PROTECTEUR EN VERRE SAMSUNG" data-price="9.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -232,7 +246,7 @@
       <div class="card-body">
         <h2 class="card-text">9.99€</h2>
         <p class="card-text">FILM PROTECTEUR EN VERRE SAMSUNG</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="fsamsung2" data-name="FILM PROTECTEUR EN VERRE SAMSUNG" data-price="9.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -242,7 +256,7 @@
       <div class="card-body">
         <h2 class="card-text">9.99€</h2>
         <p class="card-text">FILM PROTECTEUR EN VERRE SONY</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="fsony1" data-name="FILM PROTECTEUR EN VERRE SONY" data-price="9.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -250,7 +264,7 @@
       <div class="card-body">
         <h2 class="card-text">9.99€</h2>
         <p class="card-text">FILM PROTECTEUR EN VERRE SONY</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="fsony2" data-name="FILM PROTECTEUR EN VERRE SONY" data-price="9.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div><div class="row justify-content-between film">
@@ -259,7 +273,7 @@
       <div class="card-body">
         <h2 class="card-text">9.99€</h2>
         <p class="card-text">FILM PROTECTEUR EN VERRE SONY</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="fsony3" data-name="FILM PROTECTEUR EN VERRE SONY" data-price="9.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -267,7 +281,7 @@
       <div class="card-body">
         <h2 class="card-text">9.99€</h2>
         <p class="card-text">FILM PROTECTEUR EN VERRE SONY</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="fsony4" data-name="FILM PROTECTEUR EN VERRE SONY" data-price="9.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -277,7 +291,7 @@
       <div class="card-body">
         <h2 class="card-text">7.99€</h2>
         <p class="card-text">CABLE USB/MINI</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="cusb1" data-name="CABLE USB/MINI" data-price="7.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -285,7 +299,7 @@
       <div class="card-body">
         <h2 class="card-text">7.99€</h2>
         <p class="card-text">CABLE USB/MINI</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="cusb2" data-name="CABLE USB/MINI" data-price="7.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -295,7 +309,7 @@
       <div class="card-body">
         <h2 class="card-text">8.99€</h2>
         <p class="card-text">CHARGEUR SECTEUR/USB</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ch1" data-name="CHARGEUR SECTEUR/USB" data-price="8.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded" >
@@ -303,7 +317,7 @@
       <div class="card-body">
         <h2 class="card-text">8.99€</h2>
         <p class="card-text">CHARGEUR ALLUME CIGARE/USB</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ch2" data-name="CHARGEUR ALLUME CIGARE/USB" data-price="8.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -313,7 +327,7 @@
       <div class="card-body">
         <h2 class="card-text">8.99€</h2>
         <p class="card-text">CHARGEUR SECTEUR/USB</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ch3" data-name="CHARGEUR SECTEUR/USB" data-price="8.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
     <div class="col-md-5 shadow p-3 mb-5 bg-white rounded">
@@ -321,7 +335,7 @@
       <div class="card-body">
         <h2 class="card-text">8.99€</h2>
         <p class="card-text">CHARGEUR SECTEUR/USB</p>
-        <button type="button" class="btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
+        <button type="button" data-id="ch4" data-name="CHARGEUR SECTEUR/USB" data-price="8.99" class="add-to-cart btn btn-outline-primary btn-lg w-100">AJOUTER AU PANIER</button>
       </div>
     </div>
   </div>
@@ -345,25 +359,15 @@
               <!-- Grid column -->
               <div class="col-md-6 col-lg-7 text-center text-md-right">
                 <!-- Facebook -->
-                <a class="fb-ic">
-                  <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square fa-3x"> </i><a/>
-                </a>
+                <a href="https://fr-fr.facebook.com/"><i class="fab fa-facebook-square fa-3x"></i></a>
                 <!-- Twitter -->
-                <a class="tw-ic">
-                  <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square fa-3x"> </i></a>
-                </a>
+                  <a href="https://twitter.com/?lang=fr"><i class="fab fa-twitter-square fa-3x"> </i> </a>
                 <!-- Google +-->
-                <a class="gplus-ic">
-                  <a href="https://plus.google.com/?hl=fr"><i class="fab fa-google-plus-square fa-3x"> </i></a>
-                </a>
+                  <a href="https://plus.google.com/?hl=fr"><i class="fab fa-google-plus-square fa-3x"> </i> </a>
                 <!--Linkedin -->
-                <a class="li-ic">
-                  <a href="https://fr.linkedin.com/"><i class="fab fa-linkedin fa-3x"> </i></a>
-                </a>
+                  <a href="https://fr.linkedin.com/"><i class="fab fa-linkedin fa-3x"> </i> </a>
                 <!--Instagram-->
-                <a class="ins-ic">
-                  <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram fa-3x"> </i></a>
-                </a>
+                  <a href="https://www.instagram.com/?hl=fr"><i class="fab fa-instagram fa-3x"> </i> </a>
               </div>
               <!-- Grid column -->
             </div>
